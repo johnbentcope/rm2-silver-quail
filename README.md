@@ -19,14 +19,7 @@ Building
 This will result in a `dist` folder that you can copy to your device.
 
 ```bash
-# Source the correct toolchain
-source /opt/codex/rm11x/3.1.15/environment-setup-cortexa7hf-neon-remarkable-linux-gnueabi
-mkdir .build
-cd .build
-qmake ..
-make
-INSTALL_ROOT="$(pwd)/../dist" make install
-cd ..
+./go.sh
 ```
 
 Build toltec package
