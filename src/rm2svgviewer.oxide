@@ -1,0 +1,8 @@
+{
+    "displayName": "rm2svgviewer",
+    "description": "Hello World",
+    "bin": "/opt/bin/rm2svgviewer",
+    "icon": "oxide:rm2svgviewer-48",
+    "splash": "oxide:splash:rm2svgviewer-48",
+    "type": "foreground"
+}

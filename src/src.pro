@@ -1,9 +1,10 @@
 # Change this to rename the built application
-TARGET = myapp
+TARGET = rm2svgviewer
 VERSION = 1.0
 
 QT += gui
 QT += quick
+QT += svg
 
 CONFIG += ltcg
 CONFIG += c++11
@@ -28,7 +29,7 @@ CONFIG(debug, debug|release){
 
         QMAKE_LFLAGS += -fsanitize=address
         QMAKE_LFLAGS += -fsanitize=leak
-        # QMAKE_LFLAGS += -fsanitize=thread # Incompatible with address and leak
+      # QMAKE_LFLAGS += -fsanitize=thread # Incompatible with address and leak
         QMAKE_LFLAGS += -fsanitize=undefined
         QMAKE_LFLAGS += -fsanitize=pointer-compare
         QMAKE_LFLAGS += -fsanitize=pointer-subtract
@@ -50,12 +51,12 @@ target.path = /opt/bin
 INSTALLS += target
 
 # This installs the oxide application registration file
-applications.files = $$_PRO_FILE_PWD_/myapp.oxide
+applications.files = $$_PRO_FILE_PWD_/rm2svgviewer.oxide
 applications.path = /opt/usr/share/applications/
 INSTALLS += applications
 
 # This installs the application icon
-# icons.files += $$_PRO_FILE_PWD_/myapp.png
+# icons.files += $$_PRO_FILE_PWD_/rm2svgviewer.png
 # icons.path = /opt/usr/share/icons/oxide/48x48/apps
 # INSTALLS += icons
 

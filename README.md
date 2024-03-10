@@ -9,7 +9,7 @@ reMarkable Template Qt Application
 - [src/controller.h](src/controller.h) - Basic controller object that provides an interop between QML and C++.
 - [src/main.cpp](src/main.cpp) - Main application code.
 - [src/main.qml](src/main.qml) - Main user interface.
-- [src/myapp.oxide](src/myapp.oxide) - [Oxide application registration](https://oxide.eeems.codes/documentation/03_application_registration_format.html)
+- [src/rm2svgviewer.oxide](src/rm2svgviewer.oxide) - [Oxide application registration](https://oxide.eeems.codes/documentation/03_application_registration_format.html)
 - [src/qml.qrc](src/qml.qrc) - Qt resource file to embed [src/main.qml](src/main.qml) in the built application.
 - [src/src.pro](src/src.pro) - Project file. This defines the build and install process.
 

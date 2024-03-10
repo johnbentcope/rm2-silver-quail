@@ -2,6 +2,8 @@
 #include <QQmlApplicationEngine>
 #include <QtPlugin>
 #include <QtQuick>
+#include <QSvgWidget>
+#include <QtSvg>
 
 #include <cstdlib>
 #include <signal.h>
@@ -50,8 +52,8 @@ int main(int argc, char *argv[]){
      }
 
     QGuiApplication app(argc, argv);
-    app.setApplicationName("myapp");
-    app.setApplicationDisplayName("My Application");
+    app.setApplicationName("rm2svgviewer");
+    app.setApplicationDisplayName("RM2 SVG Viewer");
     app.setApplicationVersion(APP_VERSION);
     Controller controller(&app);
     QQmlApplicationEngine engine;
