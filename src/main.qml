@@ -53,9 +53,10 @@ ApplicationWindow {
     Rectangle {
       anchors.fill: parent
       color: "white"
-      Text {
-        anchors.centerIn: parent
-        text: "Hello World!"
+      Image {
+        id: svgImage
+        source: "file:/banana.svg"
+        anchors.fill: parent // Fills the top region
       }
     }
   ]
