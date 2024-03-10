@@ -40,7 +40,7 @@ jobs:
             set -ex
             echo Y | toltecctl generate-opkg-conf
             opkg update
-            opkg install my-app
+            opkg install rm2svgviewer
             # Add steps here to test app
-            opkg remove my-app
+            opkg remove rm2svgviewer
           path: ${{ steps.download.outputs.download-path }}
